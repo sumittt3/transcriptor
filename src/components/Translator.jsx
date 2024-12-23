@@ -33,12 +33,12 @@ export default function Translator() {
     setError(null);
 
     const options = {
-      method: "POST",
-      url: "https://openl-translate.p.rapidapi.com/translate",
+      method: 'POST',
+  url: 'https://openl-translate.p.rapidapi.com/translate',
       headers: {
-        "x-rapidapi-key": api,
-        "x-rapidapi-host": "openl-translate.p.rapidapi.com",
-        "Content-Type": "application/json",
+        'x-rapidapi-key': api,
+        'x-rapidapi-host': 'openl-translate.p.rapidapi.com',
+        'Content-Type': 'application/json',
       },
       data: {
         target_lang: outputFormat,
