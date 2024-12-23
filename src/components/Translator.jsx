@@ -11,7 +11,7 @@ export default function Translator() {
   const [error, setError] = useState(null);
 
   const api = import.meta.env.VITE_IMP_KEY;
-console.log(api);
+
   const handleReverseLanguage = () => {
     setInputFormat(outputFormat);
     setOutputFormat(inputFormat);
