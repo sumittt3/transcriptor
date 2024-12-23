@@ -5,12 +5,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      axios: 'axios',
-    },
-  },
-  build: {
-    rollupOptions: {
-      external: ['axios'],
+      axios: require.resolve('axios'), // Ensures axios is resolved correctly
     },
   },
 });
